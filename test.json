@@ -1,0 +1,43 @@
+const obj = {
+	"frage": "Anfangsfrage",
+	"antwort": [{
+		"frage": "stuffe1a fragen",
+		"antwort": [{
+			"frage": "stuffe2 fragen",
+			"antwort": [{
+				"frage": "stuffe3 fragen",
+				"antwort": ["bild1", "bild2", "bild3"]
+			}, {
+				"frage": "stuffe3 fragen",
+				"antwort": ["bild1", "bild2", "bild3"]
+			}, {
+				"frage": "stuffe3 fragen",
+				"antwort": ["bild1", "bild2", "bild3"]
+			}]
+		}, {
+			"frage": "stuffe1b fragen",
+			"antwort": [{
+				"frage": "stuffe3 fragen",
+				"antwort": ["bild1", "bild2", "bild3"]
+			}, {
+				"frage": "stuffe3 fragen",
+				"antwort": ["bild1", "bild2", "bild3"]
+			}, {
+				"frage": "stuffe3 fragen",
+				"antwort": ["bild1", "bild2", "bild3"]
+			}]
+		}, {
+			"frage": "stuffe1c fragen",
+			"antwort": [{
+				"frage": "stuffe3 fragen",
+				"antwort": ["bild1", "bild2", "bild3"]
+			}, {
+				"frage": "stuffe3 fragen",
+				"antwort": ["bild1", "bild2", "bild3"]
+			}, {
+				"frage": "stuffe3 fragen",
+				"antwort": ["bild1", "bild2", "bild3"]
+			}]
+		}]
+	}]
+}

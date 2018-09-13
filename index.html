@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vue Marco Projekt</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="test.json"></script>
+</head>
+<body>
+	<div id="vueGenerate">
+		<li v-for="n in antworten" style="color:red;">
+			<a v-if="(typeof n) === 'string'">
+				<!--{{ n }} -->
+			</a>
+
+			<a v-else> 
+				<v-for v-for="i of n">
+					{{ i }}
+					<v-for v-for="k in i">
+					</v-for>
+					
+				</v-for>
+			</a>
+		</li>
+	</div>
+</body>
+
+
+
+
+
+<script>
+
+	var app = new Vue({
+		el:"#vueGenerate",
+		data: {
+			frage: "123",
+			antworten: obj,
+			stage: 0,
+		}, methods: {
+			gererateData: function() {
+				this.stage === 0 ? this.frage = obj["frage"]:
+				console.log("mistake");
+			}
+		}
+	})
+	app.gererateData()
+
+	console.log;
+	
+	console.log(JSON.stringify(obj, null,2  ));
+	
+	
+</script>
+</html>
