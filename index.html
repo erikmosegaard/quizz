@@ -1,55 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<title>vue Marco Projekt</title>
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-	<script src="test.json"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="style-print.css" type="text/css" media="print">
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="test.json"></script>
 </head>
 
 <body>
-	<div id="vueGenerate">
-		{{ fragen[target].frage }}
+    <div id="buffer_top">
+        <p id="text_top">Sample Company</p>
 
-		<li v-for="n in fragen[target].antworten">
-			<button v-if="n.next" v-on:click="lasttarget=target; target = n.next; ">
-				{{ n.antwort }}
-			</button>
-			<button v-else="" v-on:click="lasttarget=target; displayimage='block'; kek=n.img">
-				{{ n.antwort }}
-			</button>
+    </div>
+    <div class="circle_center">
 
-		</li>
-		<img :style="{display:displayimage}" :src="kek" width="300px" height="300px">
-		<button v-on:click="reset">
-			Home
-		</button>
-		{{ kek }}
+    </div>
+    <div id="centerwrap">
 
-	</div>
+        <div id="antwortenwrap">
+            <div id="vueGenerate">
+                <div id="imagecontainer" :style="{display:displayimage}">
+                    <div style="display: inline;width:80%;">
+
+                            <a href="index.html" id="homeTag"><img id="home" src="images/homefin.png" alt="home"> </a>
+                            <a onclick="javascript:window.print()" id="printTag"><img id="print" src="images/printfin.png" alt="home"> </a>
+                        </div>
+                            <img id="imgbox" :src="kek">
+                </div>
+                <div class="frage">
+                    <li>{{ fragen[target].frage }}</li>
+                </div>
+                <div class="antworten">
+                    <li v-for="n in fragen[target].antworten">
+                        <div v-if="n.next" v-on:click="lasttarget=target; target = n.next; ">
+                            <!-- <button>A</button> -->
+                            {{ n.antwort }}
+                        </div>
+                        <div v-else="" v-on:click="lasttarget=target; displayimage='block'; kek = 'images/'+n.img; ">
+                            <!-- <button>B</button> -->
+                            {{ n.antwort }}
+                        </div>
+
+                    </li>
+                    <div id="icons">
+
+                    </div>
+
+                </div>
+                <!--
+                    <div class="antworten">
+                        <li><button>A</button> Antwort eins</li>
+                        <li><button>B</button> Antwort zwei</li>
+                        <li><button>C</button> Antwort drei</li>
+                    </div>
+                    
+                    <button v-on:click="reset"><img id="home" src="images/home.png" alt="home">
+                        
+                    </button>
+                </div>
+            -->
+
+            </div>
+            <script>
+                var app = new Vue({
+                    el: "#vueGenerate",
+                    data: {
+                        displayimage: "none",
+                        kek: "",
+                        fragen: obj,
+                        antworten: "none",
+                        lasttarget: "",
+                        target: "f1"
+                    },
+                    methods: {
+                        reset: function () {
+                            this.target = "f1";
+                            this.lasttarget = "";
+                            this.kek = "";
+                            this.displayimage = "none"
+                        }
+                    }
+                })
+            </script>
+
+        </div>
+
+        <div id="bottom_element">
+
+            <div id="bottom_text">
+                <p>Sample 2018</p>
+            </div>
+
+
+        </div>
 </body>
-
-<script>
-	var app = new Vue({
-		el: "#vueGenerate",
-		data: {
-			displayimage: "none",
-			kek: "",
-			fragen: obj,
-			antworten: "none",
-			lasttarget: "",
-			target: "f1"
-		},
-		methods: {
-			//resets to original value
-			reset: function () {
-				this.target = "f1";
-				this.lasttarget = "";
-				this.kek = "";
-				this.displayimage = "none"
-			}
-		}
-	})
-</script>
+<script src="scripts.js"></script>
 
 </html>

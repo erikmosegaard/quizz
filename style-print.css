@@ -1,0 +1,7 @@
+#imgbox{
+    height: 50% !important;
+    width: 50% !important;
+    position: fixed;
+    margin: 0 auto;
+    pointer-events: none;
+}
