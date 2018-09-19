@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>vue Marco Projekt</title>
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<script src="test.json"></script>
 </head>
+
 <body>
 	<div id="vueGenerate">
-		<li v-for="n in antworten" style="color:red;">
-			<a v-if="(typeof n) === 'string'">
-				<!--{{ n }} -->
-			</a>
+		{{ fragen[target].frage }}
 
-			<a v-else> 
-				<v-for v-for="i of n">
-					{{ i }}
-					<v-for v-for="k in i">
-					</v-for>
-					
-				</v-for>
-			</a>
+		<li v-for="n in fragen[target].antworten">
+			<button v-if="n.next" v-on:click="lasttarget=target; target = n.next; ">
+				{{ n.antwort }}
+			</button>
+			<button v-else="" v-on:click="lasttarget=target; displayimage='block'; kek=n.img">
+				{{ n.antwort }}
+			</button>
+
 		</li>
+		<img :style="{display:displayimage}" :src="kek" width="300px" height="300px">
+		<button v-on:click="reset">
+			Home
+		</button>
+		{{ kek }}
+
 	</div>
 </body>
 
-
-
-
-
 <script>
-
 	var app = new Vue({
-		el:"#vueGenerate",
+		el: "#vueGenerate",
 		data: {
-			frage: "123",
-			antworten: obj,
-			stage: 0,
-		}, methods: {
-			gererateData: function() {
-				this.stage === 0 ? this.frage = obj["frage"]:
-				console.log("mistake");
+			displayimage: "none",
+			kek: "",
+			fragen: obj,
+			antworten: "none",
+			lasttarget: "",
+			target: "f1"
+		},
+		methods: {
+			reset: function () {
+				this.target = "f1";
+				this.lasttarget = "";
+				this.kek = "";
+				this.displayimage = "none"
 			}
 		}
 	})
-	app.gererateData()
-
-	console.log;
-	
-	console.log(JSON.stringify(obj, null,2  ));
-	
-	
 </script>
+
 </html>
