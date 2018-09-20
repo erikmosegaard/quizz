@@ -67,7 +67,7 @@ body{
     font-family: "century gothic";
     letter-spacing: 2px;
     font-weight: 100;
-    background-color: rgba(131, 45, 56, 1);
+    background-color: rgb(47, 45, 131);
     line-height: 450px;
     text-align: center;
     margin: 0 auto;
@@ -113,7 +113,6 @@ body{
     background-color: rgba(0, 2, 3, 0.8);
     left: 0;
     display: flex;
-
     top: 0;
     overflow-y: scroll
 

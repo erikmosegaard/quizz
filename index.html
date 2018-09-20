@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="style-print.css" type="text/css" media="print">
-    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="test.json"></script>
 </head>
@@ -26,12 +26,13 @@
         <div id="antwortenwrap">
             <div id="vueGenerate">
                 <div id="imagecontainer" :style="{display:displayimage}">
-                    <div style="display: inline;width:80%;">
+                    <div>
 
-                            <a href="index.html" id="homeTag"><img id="home" src="images/homefin.png" alt="home"> </a>
-                            <a onclick="javascript:window.print()" id="printTag"><img id="print" src="images/printfin.png" alt="home"> </a>
-                        </div>
-                            <img id="imgbox" :src="kek">
+                        <a href="index.html" id="homeTag"><img id="home" src="images/homefin.png" alt="home"> </a>
+                        <a onclick="javascript:window.print()" id="printTag"><img id="print" src="images/printfin.png"
+                                alt="home"> </a>
+                    </div>
+                    <img id="imgbox" :src="kek">
                 </div>
                 <div class="frage">
                     <li>{{ fragen[target].frage }}</li>
