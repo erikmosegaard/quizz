@@ -287,7 +287,7 @@ body{
     #vueGenerate {
         margin: auto;
         width: 70%;
-        background-color: rgba(131, 45, 56,);
+        background-color: rgb(131, 45, 56);
         padding: 2%;
         border: 1px solid rgb(145, 135, 135, 0.6);
         color: #CCC;

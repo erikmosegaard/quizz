@@ -1,208 +1,208 @@
 const obj = {
 	f1: {
-		frage: "Hallo, dies ist eine Frage",
+		frage: "How do you feel like?",
 		antworten: [{
-				antwort: "Erste Antwort",
+				antwort: "I want to hug the whole world",
 				next: "f2a"
 			},
 			{
-				antwort: "Zweite Antwort",
+				antwort: "I want to crawl into a hole",
 				next: "f2b"
 			},
 			{
-				antwort: "Dritte Antwort",
+				antwort: "I want to float in a stream of flowing waters",
 				next: "f2c"
 			}
 		]
 	},
 	f2a: {
-		frage: "Hier würde die zweite Frage stehen!",
+		frage: "What do you appreciate?",
 		antworten: [{
-				antwort: "Erste Antwort",
+				antwort: "Pain, so non-pain becomes discernible",
 				next: "f3aa"
 			},
 			{
-				antwort: "Zweite Antwort",
+				antwort: "My wealth and my privileges",
 				next: "f3ab"
 			},
 			{
-				antwort: "Dritte Antwort",
+				antwort: "The fact that I am blessed by an excellent character",
 				next: "f3ac"
 			}
 		]
 	},
 	f2b: {
-		frage: "Hier würde auch eine zweite Frage stehen...",
+		frage: "What do you generally think of the concept of touch?",
 		antworten: [{
-				antwort: "Erste Antwort",
+				antwort: "I like exploring unfamiliar terrain by my fingers",
 				next: "f3ba"
 			},
 			{
-				antwort: "Zweite Antwort",
+				antwort: "Touch is superficial",
 				next: "f3bb"
 			},
 			{
-				antwort: "Dritte Antwort",
+				antwort: "I want to levitate in the air",
 				next: "f3bc"
 			}
 		]
 	},
 	f2c: {
-		frage: "Ebenso hier eine zweite Frage.",
+		frage: "Why do conflicts exist?",
 		antworten: [{
-				antwort: "Erste Antwort",
+				antwort: "Because it’s fun and free / economically wise",
 				next: "f3ca"
 			},
 			{
-				antwort: "Zweite Antwort",
+				antwort: "We just don’t have enough space",
 				next: "f3cb"
 			},
 			{
-				antwort: "Dritte Antwort",
+				antwort: "Because we are animals",
 				next: "f3cc"
 			}
 		]
 	},
 	f3aa: {
-		frage: "Und Hier würde die dritte Frage stehen!",
+		frage: "Who should be punished most?",
 		antworten: [{
-				antwort: "letzte Antwort",
+				antwort: "Minarets or maybe insects or maybe stones",
 				img: "red1.jpg"
 			},
 			{
-				antwort: "Zweite Antwort",
+				antwort: "People who live from money they don’t deserve",
 				img: "red21.jpg"
 			},
 			{
-				antwort: "Dritte Antwort",
+				antwort: "People who invest with money they don’t deserve",
 				next: "img"
 			}
 		]
 	},
 	f3ab: {
-		frage: "Noch eine dritte",
+		frage: "Where do your privileges come from?",
 		antworten: [{
-				antwort: "Erste Antwort",
+				antwort: "From my strong muscles",
 				next: "img"
 			},
 			{
-				antwort: "Zweite Antwort",
+				antwort: "From my ancestors hard work",
 				next: "img"
 			},
 			{
-				antwort: "Dritte Antwort",
+				antwort: "From my neighbours hard work",
 				next: "img"
 			}
 		]
 	},
 	f3ac: {
-		frage: "Eine weitere dritte Frage¿",
+		frage: "What if there was no hierarchy?",
 		antworten: [{
-				antwort: "Erste Antwort",
+				antwort: "In this case, I would be on the top",
 				next: "img"
 			},
 			{
-				antwort: "Zweite Antwort",
+				antwort: "Society would become a mess",
 				next: "img"
 			},
 			{
-				antwort: "Dritte Antwort",
+				antwort: "We can not have no hierarchy, we can only try ",
 				next: "img"
 			}
 		]
 	},
 	f3ba: {
-		frage: "Es gibt viele dritte Fragen.",
+		frage: "What is most filthy?",
 		antworten: [{
-				antwort: "Erste Antwort",
+				antwort: "sickness",
 				next: "img"
 			},
 			{
-				antwort: "Zweite Antwort",
+				antwort: "rats",
 				next: "img"
 			},
 			{
-				antwort: "Dritte Antwort",
+				antwort: "your toilet",
 				next: "img"
 			}
 		]
 	},
 	f3bb: {
-		frage: "Wow, noch mehr dritte Fragen!!",
+		frage: "Inside which of these would you rather go?",
 		antworten: [{
-				antwort: "Erste Antwort",
+				antwort: "into another person’s belly",
 				next: "img"
 			},
 			{
-				antwort: "Zweite Antwort",
+				antwort: "on an anarchist planet",
 				next: "img"
 			},
 			{
-				antwort: "Dritte Antwort",
+				antwort: "into a public tv discussion about privileges as a very privileged person amongst 10 underprivileged persons",
 				next: "img"
 			}
 		]
 	},
 	f3bc: {
-		frage: "Viele, viele dritte Fragen",
+		frage: "Which innovation in mobility politics do you support?",
 		antworten: [{
-				antwort: "Erste Antwort",
+				antwort: "Mobility should be for free and everyone can fly wherever they want all the time",
 				next: "img"
 			},
 			{
-				antwort: "Zweite Antwort",
+				antwort: "Mobility should be more expensive, so only very rich people can afford to fly",
 				next: "img"
 			},
 			{
-				antwort: "Dritte Antwort",
+				antwort: "Mobility should be regulated, so only poor people are allowed to fly",
 				next: "img"
 			}
 		]
 	},
 	f3ca: {
-		frage: "Weeee dritte Frage",
+		frage: "What is fun and free, too?",
 		antworten: [{
-				antwort: "Erste Antwort",
+				antwort: "Walking over national borders",
 				next: "img"
 			},
 			{
-				antwort: "Zweite Antwort",
+				antwort: "Air",
 				next: "img"
 			},
 			{
-				antwort: "Dritte Antwort",
+				antwort: "No water any more",
 				next: "img"
 			}
 		]
 	},
 	f3cb: {
-		frage: "Ganz viele bunte dritte Fragen",
+		frage: "How many people can be put into your flat?",
 		antworten: [{
-				antwort: "Erste Antwort",
+				antwort: "About 2",
 				next: "img"
 			},
 			{
-				antwort: "Zweite Antwort",
+				antwort: "Around 200, until up until the ceiling",
 				next: "img"
 			},
 			{
-				antwort: "Dritte Antwort",
+				antwort: "All the people I like",
 				next: "img"
 			}
 		]
 	},
 	f3cc: {
-		frage: "Die letzte Dritte Frage",
+		frage: "Thus, do you think animals and human are / should be equal?",
 		antworten: [{
-				antwort: "Erste Antwort",
+				antwort: "I eat cheese but would not want to be made pregnant by a cow and have my baby killed and be milked",
 				next: "img"
 			},
 			{
-				antwort: "Zweite Antwort",
+				antwort: "Animals have their own systems of intelligence but are not equal in human’ value system",
 				next: "img"
 			},
 			{
-				antwort: "Dritte Antwort",
+				antwort: "I would love to be an animal, sometimes",
 				next: "img"
 			}
 		]
