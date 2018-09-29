@@ -143,7 +143,6 @@ body{
 }
 
 .antworten{
-    background-color: ;
     padding-top: 5px;
     padding-right: 5px;
     padding-bottom: 5px;
@@ -286,7 +285,6 @@ body{
     }*/
 
     #vueGenerate {
-
         margin: auto;
         width: 70%;
         background-color: rgba(131, 45, 56,);
@@ -296,7 +294,6 @@ body{
     }
 
     .antworten{
-        background-color: ;
         padding-top: 5px;
         padding-right: 5px;
         padding-bottom: 5px;
