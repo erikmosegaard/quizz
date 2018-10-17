@@ -1,34 +1,210 @@
 fragenKatalog = {
-  frage1: {
-    frage: 'Wie ist das Wetter?',
-    antworten: [
-      {antwort: 'Schön', next: 'frage2'},
-      {antwort: 'Bedeckt', next: 'frage3'},
-      {antwort: 'Regnerisch', next: 'frage4'},
-    ],
+  f1: {
+    frage: "How do you feel like?",
+    antworten: [{
+      antwort: "I want to hug the whole world",
+      next: "f2a"
+    },
+    {
+      antwort: "I want to crawl into a hole",
+      next: "f2b"
+    },
+    {
+      antwort: "I want to float in a stream of flowing waters",
+      next: "f2c"
+    }
+  ]
+},
+f2a: {
+  frage: "What do you appreciate?",
+  antworten: [{
+    antwort: "Pain, so non-pain becomes discernible",
+    next: "f3aa"
   },
-  frage2: {
-    frage: 'Was tun bei diesem schönen Wetter?',
-    antworten: [
-      {antwort: 'Gamen', pic: 'https://techtalk.currys.co.uk/media/683769/Fotolia_73249583_M%20600.jpg'},
-      {antwort: 'Fernsehen', pic: 'https://www.postmedien.ch/wp-content/uploads/2015/09/kindertv.jpg'},
-      {antwort: 'Aufräumen', pic: 'https://www.toonpool.com/user/362/files/aufraeumen_990935.jpg'},
-    ],
+  {
+    antwort: "My wealth and my privileges",
+    next: "f3ab"
   },
-  frage3: {
-    frage: 'Was tun bei diesem naja, nicht gerade wahnsinnigen Wetter?',
-    antworten: [
-      {antwort: 'Sünnele', pic: 'https://www.tripsavvy.com/thmb/kx2QZntlqrA6_rCU6ezLu8ewARs=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/Dameisha-Beach-5989134d396e5a00114810dd.jpg'},
-      {antwort: 'Grassskifahren', pic: 'http://skiclub-winterthur.ch/sites/default/files/3278.jpg'},
-      {antwort: 'Ballon fahren', pic: 'https://www.dvfg.de/fileadmin/user_upload/content/Heissluftballons.jpg'},
-    ],
-  },
-  frage4: {
-    frage: 'Was tun bei diesem doofen Wetter?',
-    antworten: [
-      {antwort: 'Schlammschlacht', pic: 'https://weltexpress.info/wp-content/uploads/2017/06/Schlamm-Soldat-Schlammschlacht-QF-Pixel-1920-Quelle-Source-Pixabay-gemeinfrei-CC0-Public-Domain.jpg'},
-      {antwort: 'Dancing in the rain', pic: 'https://static1.squarespace.com/static/586ed399bf629a58a34f76fe/t/58aca3afc534a5aed421e374/1487709294826/'},
-      {antwort: 'Velofahren', pic: 'https://tdsportswear.com/wp-content/uploads/2016/01/Cycle-wet1-1-1170x570.jpg'},
-    ],
-  },
+  {
+    antwort: "The fact that I am blessed by an excellent character",
+    next: "f3ac"
+  }
+]
+},
+f2b: {
+frage: "What do you generally think of the concept of touch?",
+antworten: [{
+  antwort: "I like exploring unfamiliar terrain by my fingers",
+  next: "f3ba"
+},
+{
+  antwort: "Touch is superficial",
+  next: "f3bb"
+},
+{
+  antwort: "I want to levitate in the air",
+  next: "f3bc"
+}
+]
+},
+f2c: {
+frage: "Why do conflicts exist?",
+antworten: [{
+  antwort: "Because it's fun and free / economically wise",
+  next: "f3ca"
+},
+{
+  antwort: "We just don't have enough space",
+  next: "f3cb"
+},
+{
+  antwort: "Because we are animals",
+  next: "f3cc"
+}
+]
+},
+f3aa: {
+frage: "Who should be punished most?",
+antworten: [{
+  antwort: "Minarets or maybe insects or maybe stones",
+  img: "Bild_1.jpg"
+},
+{
+  antwort: "People who live from money they don't deserve",
+  img: "Bild_2.jpg"
+},
+{
+  antwort: "People who invest with money they don't deserve",
+  img: "Bild_3.jpg"
+}
+]
+},
+f3ab: {
+frage: "Where do your privileges come from?",
+antworten: [{
+  antwort: "From my strong muscles",
+  img: "Bild_4.jpg"
+},
+{
+  antwort: "From my ancestors hard work",
+  img: "Bild_5.jpg"
+},
+{
+  antwort: "From my neighbour's hard work",
+  img: "Bild_6.jpg"
+}
+]
+},
+f3ac: {
+frage: "What if there was no hierarchy?",
+antworten: [{
+  antwort: "In this case, I would be on the top",
+  img: "Bild_7.jpg"
+},
+{
+  antwort: "Society would become a mess",
+  img: "Bild_8.jpg"
+},
+{
+  antwort: "We can not have no hierarchy, we can only try",
+  img: "Bild_9.jpg"
+}
+]
+},
+f3ba: {
+frage: "What is most filthy?",
+antworten: [{
+  antwort: "sickness",
+  img: "Bild_10.jpg"
+},
+{
+  antwort: "rats",
+  img: "Bild_11.jpg"
+},
+{
+  antwort: "your toilet",
+  img: "Bild_12.jpg"
+}
+]
+},
+f3bb: {
+frage: "Inside which of these would you rather go?",
+antworten: [{
+  antwort: "into another person's belly",
+  img: "Bild_13.jpg"
+},
+{
+  antwort: "on an anarchist planet",
+  img: "Bild_14.jpg"
+},
+{
+  antwort: "into a public tv discussion about privileges as a very privileged person amongst 10 underprivileged persons",
+  img: "Bild_15.jpg"
+}
+]
+},
+f3bc: {
+frage: "Which innovation in mobility politics do you support?",
+antworten: [{
+  antwort: "Mobility should be for free and everyone can fly wherever they want all the time",
+  img: "Bild_16.jpg"
+},
+{
+  antwort: "Mobility should be more expensive, so only very rich people can afford to fly",
+  img: "Bild_17.jpg"
+},
+{
+  antwort: "Mobility should be regulated, so only poor people are allowed to fly",
+  img: "Bild_18.jpg"
+}
+]
+},
+f3ca: {
+frage: "What is fun and free, too?",
+antworten: [{
+  antwort: "Walking over national borders",
+  img: "Bild_19.jpg"
+},
+{
+  antwort: "Air",
+  img: "Bild_20.jpg"
+},
+{
+  antwort: "Not water any more",
+  img: "Bild_21.jpg"
+}
+]
+},
+f3cb: {
+frage: "How many people can be put into your flat?",
+antworten: [{
+  antwort: "About two",
+  img: "Bild_22.jpg"
+},
+{
+  antwort: "Around 200, until up under the ceiling",
+  img: "Bild_23.jpg"
+},
+{
+  antwort: "All the people I like",
+  img: "Bild_24.jpg"
+}
+]
+},
+f3cc: {
+frage: "Thus, do you think animals and human are / should be equal?",
+antworten: [{
+  antwort: "I eat cheese but would not want to be made pregnant by a cow and have my baby killed and be milked",
+  img: "Bild_25.jpg"
+},
+{
+  antwort: "Animals have their own systems of intelligence but are not equal in human' value system",
+  img: "Bild_26.jpg"
+},
+{
+  antwort: "I would love to be an animal, sometimes",
+  img: "Bild_27.jpg"
+}
+]
+},
 }
