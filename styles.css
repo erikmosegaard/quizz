@@ -162,8 +162,16 @@ body{
     list-style-type: none;
     font-family: "century gothic";
     letter-spacing: 2px;
-    padding: 30px;
     border:1px solid rgb(145, 135, 135, 0.6);
+}
+
+.antworten li > div {
+    padding: 30px;
+    cursor: pointer;
+}
+.antworten li > div:hover {
+    padding: 30px;
+    cursor: pointer;
 }
 
 #antwortenwrap{
