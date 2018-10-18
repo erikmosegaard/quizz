@@ -36,7 +36,6 @@ body{
     background-color: rgb(145, 135, 135, 0.6);
     height: 100px;
     border-bottom: 2px solid #adadad;
-    transition: 2.5s;
 }
 
 #buffer_top a{
@@ -78,28 +77,22 @@ body{
     border-radius: 50%;
     width: 450px;
     height: 450px;
-    background-image: url("images/samplelogoo.png");
+    background-image: url("images/gallerie/stempel_rot_ff0000.png");
+    background-repeat: round;
+    background-position: center;
     font-size: 25pt;
     font-family: "century gothic";
     letter-spacing: 2px;
     font-weight: 100;
-    background-color: rgb(47, 45, 131);
+    background-color: rgba(255,255,255,0.8);
     line-height: 450px;
     text-align: center;
     margin: 0 auto;
     left: 50%;
     opacity: 1;
     border: 2.4px solid rgb(183, 183, 187);
-    -webkit-transition-duration: 2s;
-    -moz-transition-duration: 2s;
-    -o-transition-duration: 2s;
-    transition-duration: 2s;
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -moz-transform;
-    -o-transition-property: -o-transform;
-    transition-property: transform;
 
-
+    z-index: 5;
     position:absolute; /*it can be fixed too*/
     left:0; right:0;
     top:0; bottom:0;
@@ -109,6 +102,25 @@ body{
     max-width:100%;
     max-height:100%;
     overflow:auto;
+}
+
+.logo-leave-active {
+    transition: all 2s ease;
+
+}
+
+.logo-leave-to {
+    transform: rotate(180deg) scale(0.1);
+    opacity: 0;
+}
+
+video {
+    z-index: 4;
+    height: 720px;
+    position:absolute; /*it can be fixed too*/
+    left:0; right:0;
+    top:0; bottom:0;
+    margin:auto;
 }
 
 #vueGenerate{
@@ -193,7 +205,6 @@ body{
     width: 100%;
     height: 100%;
     background-color:rgb(145, 135, 135, 0.6);
-    display:none;
     padding-top:5%;
 }
 

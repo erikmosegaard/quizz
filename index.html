@@ -8,7 +8,6 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="style-print.css" type="text/css" media="print">
-    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="fragen.js"></script>
 </head>
@@ -21,9 +20,14 @@
             <a v-on:click="switchLang()">{{ lang }}</a>
         </div>
 
-        <div class="circle_center"></div>
+        <transition name="logo" v-if="target === 'start'">
+            <div class="circle_center" @click="target = 'video'"></div>
+        </transition>
 
-        <div id="centerwrap">
+        <div v-else-if="target === 'video'">
+            <video src="images/intro.webm" autoplay @ended="target = 'f1'"></video>
+        </div>
+        <div id="centerwrap" v-else>
             <div id="antwortenwrap">
                 <div id="vueGenerate">
                     <div id="imagecontainer" v-if="image">
