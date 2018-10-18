@@ -14,47 +14,52 @@
 </head>
 
 <body>
-    <div id="buffer_top">
-        <p id="text_top">Sample Company</p>
+    <div id="app">
 
-    </div>
-    <div class="circle_center">
 
-    </div>
-    <div id="centerwrap">
+        <div id="buffer_top">
+            <p id="text_top">Sample Company</p>
 
-        <div id="antwortenwrap">
-            <div id="vueGenerate">
-                <div id="imagecontainer" :style="{display:displayimage}">
-                    <div>
+            <a v-on:click="switchLang()">{{ lang[langnum] }}</a>
 
-                        <a href="index.html" id="homeTag"><img id="home" src="images/homefin.png" alt="home"> </a>
-                        <a onclick="javascript:window.print()" id="printTag"><img id="print" src="images/printfin.png"
-                                alt="home"> </a>
-                    </div>
-                    <img id="imgbox" :src="kek">
-                </div>
-                <div class="frage">
-                    <li>{{ fragen[target].frage }}</li>
-                </div>
-                <div class="antworten">
-                    <li v-for="n in fragen[target].antworten">
-                        <div v-if="n.next" v-on:click="lasttarget=target; target = n.next; ">
-                            <!-- <button>A</button> -->
-                            {{ n.antwort }}
+        </div>
+        <div class="circle_center">
+
+        </div>
+        <div id="centerwrap">
+
+            <div id="antwortenwrap">
+                <div id="vueGenerate">
+                    <div id="imagecontainer" :style="{display:displayimage}">
+                        <div>
+
+                            <a href="index.html" id="homeTag"><img id="home" src="images/homefin.png" alt="home"> </a>
+                            <a onclick="javascript:window.print()" id="printTag"><img id="print" src="images/printfin.png"
+                                    alt="home"> </a>
                         </div>
-                        <div v-else="" v-on:click="lasttarget=target; displayimage='block'; kek = 'images/'+n.img; ">
-                            <!-- <button>B</button> -->
-                            {{ n.antwort }}
+                        <img id="imgbox" :src="kek">
+                    </div>
+                    <div class="frage">
+                        <li>{{ fragen[target].frage }}</li>
+                    </div>
+                    <div class="antworten">
+                        <li v-for="n in fragen[target].antworten">
+                            <div v-if="n.next" v-on:click="lasttarget=target; target = n.next; ">
+                                <!-- <button>A</button> -->
+                                {{ n.antwort }}
+                            </div>
+                            <div v-else="" v-on:click="lasttarget=target; displayimage='block'; kek = 'images/'+n.img; ">
+                                <!-- <button>B</button> -->
+                                {{ n.antwort }}
+                            </div>
+
+                        </li>
+                        <div id="icons">
+
                         </div>
 
-                    </li>
-                    <div id="icons">
-
                     </div>
-
-                </div>
-                <!--
+                    <!--
                     <div class="antworten">
                         <li><button>A</button> Antwort eins</li>
                         <li><button>B</button> Antwort zwei</li>
@@ -66,40 +71,53 @@
                     </button>
                 </div>
             -->
+                </div>
+            </div>
+
+
+            <div id="bottom_element">
+
+                <div id="bottom_text">
+                    <p>Sample 2018</p>
+                </div>
+
 
             </div>
-            <script>
-                var app = new Vue({
-                    el: "#vueGenerate",
-                    data: {
-                        displayimage: "none",
-                        kek: "",
-                        fragen: obj,
-                        antworten: "none",
-                        lasttarget: "",
-                        target: "f1"
+        </div>
+        </div>
+        <script>
+            var app = new Vue({
+                el: "#app",
+                data: {
+                    displayimage: "none",
+                    kek: "",
+                    fragen: obj["EN_obj"],
+                    antworten: "none",
+                    lasttarget: "",
+                    target: "f1",
+                    langnum: 0,
+                    lang: ["EN", "DE"],
+                },
+                methods: {
+                    reset: function () {
+                        this.target = "f1";
+                        this.lasttarget = "";
+                        this.kek = "";
+                        this.displayimage = "none"
                     },
-                    methods: {
-                        reset: function () {
-                            this.target = "f1";
-                            this.lasttarget = "";
-                            this.kek = "";
-                            this.displayimage = "none"
+                    switchLang() {
+                        let check = this.langnum;
+                        if (check === 0) {
+                            this.langnum = 1
+                        } else {
+                            this.langnum = 0
                         }
+                        this.fragen = obj[this.lang[this.langnum]];
                     }
-                })
-            </script>
+                }
+            })
 
-        </div>
-
-        <div id="bottom_element">
-
-            <div id="bottom_text">
-                <p>Sample 2018</p>
-            </div>
-
-
-        </div>
+        </script>
 </body>
 <script src="scripts.js"></script>
 

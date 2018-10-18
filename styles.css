@@ -39,6 +39,17 @@ body{
     transition: 2.5s;
 }
 
+#buffer_top a{
+    float: right;
+    margin:0px;
+    padding: 10px;
+    font-size: 45pt;
+    font-family: "century gothic";
+    letter-spacing: 2px;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+}
+
 #text_top {
     margin:0px;
     padding: 10px;
