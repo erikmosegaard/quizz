@@ -2,11 +2,9 @@ body{
     padding: 0;
     margin: 0;
     background-image: url("images/grauTest.jpg");
-    /* background-color: #7C0A02; */
     max-width: 1920px;
     width:100%;
     overflow: hidden;
-
 }
 
 #bottom_element{
@@ -230,7 +228,6 @@ video {
 
 }
 
-
 #home{
     max-width: 50px;
     max-height: 50px;
@@ -292,33 +289,6 @@ video {
         margin-top:-2px;
     }
 
-/*
-    .circle_center{
-        position: fixed;
-        border-radius: 50%;
-        width: 350px;
-        height: 350px;
-        background-image: url("images/logo450450.png");
-        font-size: 25pt;
-        font-family: "century gothic";
-        letter-spacing: 2px;
-        font-weight: 100;
-        line-height: 350px;
-        text-align: center;
-        margin-left:35%;
-        margin-top: 8%;
-        opacity: 1;
-        border: 4px solid #C4C3D0;
-        -webkit-transition-duration: 2s;
-        -moz-transition-duration: 2s;
-        -o-transition-duration: 2s;
-        transition-duration: 2s;
-        -webkit-transition-property: -webkit-transform;
-        -moz-transition-property: -moz-transform;
-        -o-transition-property: -o-transform;
-        transition-property: transform;
-    }*/
-
     #vueGenerate {
         margin: auto;
         width: 70%;
@@ -376,9 +346,3 @@ video {
         color: #CCC;
     }
 }
-
-/* @media only screen and (max-width: 667px) {
-    body{
-        display:none;
-    }
-} */
