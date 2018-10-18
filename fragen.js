@@ -1,5 +1,5 @@
-const obj = {
-	DE_obj: {
+const fragenKatalog = {
+	DE: {
 		f1: {
 			frage: "Wie fühlst du dich?",
 			antworten: [{
@@ -17,7 +17,7 @@ const obj = {
 			]
 		},
 	},
-	EN_obj: {
+	EN: {
 		f1: {
 			frage: "How do you feel like?",
 			antworten: [{
