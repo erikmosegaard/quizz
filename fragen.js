@@ -86,15 +86,15 @@ const fragenKatalog = {
 			frage: "Who should be punished most?",
 			antworten: [{
 					antwort: "Minarets or maybe insects or maybe stones",
-					img: "red1.jpg"
+					img: "Bild_1.jpg"
 				},
 				{
 					antwort: "People who live from money they don’t deserve",
-					img: "red21.jpg"
+					img: "Bild_2.jpg"
 				},
 				{
 					antwort: "People who invest with money they don’t deserve",
-					next: "img"
+					img: "Bild_3.jpg"
 				}
 			]
 		},
@@ -102,15 +102,15 @@ const fragenKatalog = {
 			frage: "Where do your privileges come from?",
 			antworten: [{
 					antwort: "From my strong muscles",
-					next: "img"
+					img: "Bild_4.jpg"
 				},
 				{
 					antwort: "From my ancestors hard work",
-					next: "img"
+					img: "Bild_5.jpg"
 				},
 				{
 					antwort: "From my neighbours hard work",
-					next: "img"
+					img: "Bild_6.jpg"
 				}
 			]
 		},
@@ -118,15 +118,15 @@ const fragenKatalog = {
 			frage: "What if there was no hierarchy?",
 			antworten: [{
 					antwort: "In this case, I would be on the top",
-					next: "img"
+					img: "Bild_7.jpg"
 				},
 				{
 					antwort: "Society would become a mess",
-					next: "img"
+					img: "Bild_8.jpg"
 				},
 				{
 					antwort: "We can not have no hierarchy, we can only try ",
-					next: "img"
+					img: "Bild_9.jpg"
 				}
 			]
 		},
@@ -134,15 +134,15 @@ const fragenKatalog = {
 			frage: "What is most filthy?",
 			antworten: [{
 					antwort: "sickness",
-					next: "img"
+					img: "Bild_10.jpg"
 				},
 				{
 					antwort: "rats",
-					next: "img"
+					img: "Bild_11.jpg"
 				},
 				{
 					antwort: "your toilet",
-					next: "img"
+					img: "Bild_12.jpg"
 				}
 			]
 		},
@@ -150,15 +150,15 @@ const fragenKatalog = {
 			frage: "Inside which of these would you rather go?",
 			antworten: [{
 					antwort: "into another person’s belly",
-					next: "img"
+					img: "Bild_13.jpg"
 				},
 				{
 					antwort: "on an anarchist planet",
-					next: "img"
+					img: "Bild_14.jpg"
 				},
 				{
 					antwort: "into a public tv discussion about privileges as a very privileged person amongst 10 underprivileged persons",
-					next: "img"
+					img: "Bild_15.jpg"
 				}
 			]
 		},
@@ -166,15 +166,15 @@ const fragenKatalog = {
 			frage: "Which innovation in mobility politics do you support?",
 			antworten: [{
 					antwort: "Mobility should be for free and everyone can fly wherever they want all the time",
-					next: "img"
+					img: "Bild_16.jpg"
 				},
 				{
 					antwort: "Mobility should be more expensive, so only very rich people can afford to fly",
-					next: "img"
+					img: "Bild_17.jpg"
 				},
 				{
 					antwort: "Mobility should be regulated, so only poor people are allowed to fly",
-					next: "img"
+					img: "Bild_18.jpg"
 				}
 			]
 		},
@@ -182,31 +182,31 @@ const fragenKatalog = {
 			frage: "What is fun and free, too?",
 			antworten: [{
 					antwort: "Walking over national borders",
-					next: "img"
+					img: "Bild_19.jpg"
 				},
 				{
 					antwort: "Air",
-					next: "img"
+					img: "Bild_20.jpg"
 				},
 				{
 					antwort: "No water any more",
-					next: "img"
+					img: "Bild_21.jpg"
 				}
 			]
 		},
 		f3cb: {
 			frage: "How many people can be put into your flat?",
 			antworten: [{
-					antwort: "About 2",
-					next: "img"
+					antwort: "About two",
+					img: "Bild_22.jpg"
 				},
 				{
 					antwort: "Around 200, until up until the ceiling",
-					next: "img"
+					img: "Bild_23.jpg"
 				},
 				{
 					antwort: "All the people I like",
-					next: "img"
+					img: "Bild_24.jpg"
 				}
 			]
 		},
@@ -214,15 +214,15 @@ const fragenKatalog = {
 			frage: "Thus, do you think animals and human are / should be equal?",
 			antworten: [{
 					antwort: "I eat cheese but would not want to be made pregnant by a cow and have my baby killed and be milked",
-					next: "img"
+					img: "Bild_25.jpg"
 				},
 				{
 					antwort: "Animals have their own systems of intelligence but are not equal in human’ value system",
-					next: "img"
+					img: "Bild_26.jpg"
 				},
 				{
 					antwort: "I would love to be an animal, sometimes",
-					next: "img"
+					img: "Bild_27.jpg"
 				}
 			]
 		},
