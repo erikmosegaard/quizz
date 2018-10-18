@@ -1,18 +1,210 @@
 const fragenKatalog = {
 	DE: {
 		f1: {
-			frage: "Wie fühlst du dich?",
+			frage: "Wonach fühlst du dich?",
 			antworten: [{
-					antwort: "Ich möchte die ganze Welt umarmen",
+					antwort: "Ich möchte die ganze Welt verschlingen",
 					next: "f2a"
 				},
 				{
-					antwort: "Ich will mich in ein Loch verkriechen",
+					antwort: "Ich möchte in ein Loch kriechen",
 					next: "f2b"
 				},
 				{
-					antwort: "Ich will mich in einem fliessenden Gewässer gleiten lassen",
+					antwort: "Ich möchte mich in einem Fliessgewässer treiben lassen",
 					next: "f2c"
+				}
+			]
+		},
+		f2a: {
+			frage: "Was schätzt du?",
+			antworten: [{
+					antwort: "Schmerz, damit der Nichtschmerz erkennbar wird",
+					next: "f3aa"
+				},
+				{
+					antwort: "Meinen Wohlstand und meine Privilegien",
+					next: "f3ab"
+				},
+				{
+					antwort: "Die Tatsache dass ich mit vorzüglichem Charakter ausgestattet bin",
+					next: "f3ac"
+				}
+			]
+		},
+		f2b: {
+			frage: "Was hältst du von Berührung im Allgemeinen?",
+			antworten: [{
+					antwort: "Ich erforsche gerne mir Unbekanntes mit meinen Fingern",
+					next: "f3ba"
+				},
+				{
+					antwort: "Ich verbinde mich gerne mit einem Material von dem ich glaube, dass ich auch daraus bestehe",
+					next: "f3bb"
+				},
+				{
+					antwort: "Ich möchte in der Luft schweben in einer wohlig warmen Glaskugel",
+					next: "f3bc"
+				}
+			]
+		},
+		f2c: {
+			frage: "Warum gibt es Konflikte?",
+			antworten: [{
+					antwort: "Warum nicht?",
+					next: "f3ca"
+				},
+				{
+					antwort: "Es ist zu wenig Platz für zu viel Geschehen",
+					next: "f3cb"
+				},
+				{
+					antwort: "???",
+					next: "f3cc"
+				}
+			]
+		},
+		f3aa: {
+			frage: "Wie ist die ideale Gesellschaft?",
+			antworten: [{
+					antwort: "a",
+					img: "Bild_1.jpg"
+				},
+				{
+					antwort: "b",
+					img: "Bild_2.jpg"
+				},
+				{
+					antwort: "c",
+					img: "Bild_3.jpg"
+				}
+			]
+		},
+		f3ab: {
+			frage: "?",
+			antworten: [{
+					antwort: "a",
+					img: "Bild_4.jpg"
+				},
+				{
+					antwort: "b",
+					img: "Bild_5.jpg"
+				},
+				{
+					antwort: "c",
+					img: "Bild_6.jpg"
+				}
+			]
+		},
+		f3ac: {
+			frage: "?",
+			antworten: [{
+					antwort: "a",
+					img: "Bild_7.jpg"
+				},
+				{
+					antwort: "b",
+					img: "Bild_8.jpg"
+				},
+				{
+					antwort: "c",
+					img: "Bild_9.jpg"
+				}
+			]
+		},
+		f3ba: {
+			frage: "?",
+			antworten: [{
+					antwort: "a",
+					img: "Bild_10.jpg"
+				},
+				{
+					antwort: "b",
+					img: "Bild_11.jpg"
+				},
+				{
+					antwort: "c",
+					img: "Bild_12.jpg"
+				}
+			]
+		},
+		f3bb: {
+			frage: "?",
+			antworten: [{
+					antwort: "a",
+					img: "Bild_13.jpg"
+				},
+				{
+					antwort: "b",
+					img: "Bild_14.jpg"
+				},
+				{
+					antwort: "c",
+					img: "Bild_15.jpg"
+				}
+			]
+		},
+		f3bc: {
+			frage: "?",
+			antworten: [{
+					antwort: "a",
+					img: "Bild_16.jpg"
+				},
+				{
+					antwort: "b",
+					img: "Bild_17.jpg"
+				},
+				{
+					antwort: "c",
+					img: "Bild_18.jpg"
+				}
+			]
+		},
+		f3ca: {
+			frage: "?",
+			antworten: [{
+					antwort: "a",
+					img: "Bild_19.jpg"
+				},
+				{
+					antwort: "b",
+					img: "Bild_20.jpg"
+				},
+				{
+					antwort: "c",
+					img: "Bild_21.jpg"
+				}
+			]
+		},
+		f3cb: {
+			frage: "?",
+			antworten: [{
+					antwort: "a",
+					img: "Bild_22.jpg"
+				},
+				{
+					antwort: "b",
+					img: "Bild_23.jpg"
+				},
+				{
+					antwort: "c",
+					img: "Bild_24.jpg"
+				}
+			]
+		},
+		f3cc: {
+			frage: "?",
+			antworten: [{
+					antwort: "a",
+					img: "Bild_25.jpg"
+				},
+				{
+					antwort: "b",
+					img: "Bild_26.jpg"
+				},
+				{
+					antwort: "c",
+					img: "Bild_27.jpg"
 				}
 			]
 		},
