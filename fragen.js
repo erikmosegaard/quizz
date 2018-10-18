@@ -1,6 +1,21 @@
 const obj = {
 	DE_obj: {
-
+		f1: {
+			frage: "Wie fühlst du dich?",
+			antworten: [{
+					antwort: "Ich möchte die ganze Welt umarmen",
+					next: "f2a"
+				},
+				{
+					antwort: "Ich will mich in ein Loch verkriechen",
+					next: "f2b"
+				},
+				{
+					antwort: "Ich will mich in einem fliessenden Gewässer gleiten lassen",
+					next: "f2c"
+				}
+			]
+		},
 	},
 	EN_obj: {
 		f1: {

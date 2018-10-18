@@ -48,6 +48,11 @@ body{
     letter-spacing: 2px;
     font-weight: 100;
     color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+#buffer_top a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 #text_top {
