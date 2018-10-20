@@ -58,6 +58,11 @@
         </div>
     </div>
     <script>
+        // Prevent scrolling and bounce on iPad
+        document.ontouchmove = function(event){
+            event.preventDefault();
+        }
+
         function getStartLanguage() {
             var defaultLang = 'DE'
             var supportedLanguages = Object.keys(fragenKatalog)
