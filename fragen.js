@@ -1,3 +1,8 @@
+const titles =  {
+  DE: 'Drucke deinen persönlichen Trainingsplan',
+  EN: 'Print your personal workout plan'
+}
+
 const fragenKatalog = {
   DE: {
     f1: {

@@ -15,7 +15,7 @@
 <body>
     <div id="app">
         <div id="buffer_top">
-            <p id="text_top">Sample Company</p>
+            <p id="text_top">{{titles[lang]}}</p>
             <a v-on:click="switchLang()">{{ lang }}</a>
         </div>
 
@@ -26,6 +26,7 @@
         <div v-else-if="target === 'video'">
             <video src="images/intro.webm" autoplay @ended="target = 'f1'"></video>
         </div>
+
         <div id="centerwrap" v-else>
             <div id="antwortenwrap">
                 <div id="vueGenerate">
@@ -86,6 +87,7 @@
         var app = new Vue({
             el: "#app",
             data: {
+                titles: titles,
                 image: "",
                 fragen: fragenKatalog,
                 target: "start",
