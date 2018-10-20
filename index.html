@@ -31,11 +31,9 @@
             <div id="antwortenwrap">
                 <div id="vueGenerate">
                     <div id="imagecontainer" v-if="image">
-                        <div>
-                            <a @click="reset" id="homeTag"><img id="home" src="images/homefin.png" alt="home"> </a>
-                            <a onclick="javascript:window.print()" id="printTag"><img id="print" src="images/printfin.png"
-                                    alt="home"> </a>
-                        </div>
+                        <a @click="reset" id="homeTag"><img id="home" src="images/homefin.png" alt="home"> </a>
+                        <a onclick="javascript:window.print()" id="printTag"><img id="print" src="images/printfin.png"
+                                alt="home"> </a>
                         <img id="imgbox" :src="image">
                     </div>
                     <div class="frage">

@@ -138,7 +138,7 @@ video {
     margin: 0 auto;
     background-color: rgba(0, 2, 3, 0.8);
     left: 0;
-    display: flex;
+    display: block;
     top: 0;
     overflow-y: scroll
 
@@ -152,7 +152,9 @@ video {
     margin-right: auto;
     margin-top: 5%;
     margin-bottom: 5%;
-    width: 50%;
+    padding-top: 7%;
+    width: 75%;
+    clear: both;
 }
 
 .frage{
@@ -232,7 +234,7 @@ video {
     max-width: 50px;
     max-height: 50px;
     padding-top: 20px;
-    margin-left: 2%;
+    margin-left: 20px;
     position: relative;
 }
 
@@ -244,18 +246,20 @@ video {
     margin: 5px;
 }
 #printTag{
-    margin-right: 10%;
-    margin-top: 20px;
+    margin-right: 30px;
+    margin-top: 30px;
     width: 60px;
+    height: 60px;
     background-color: white;
     float: right;
     display: block;
 
 }
 #homeTag{
-    margin-left: 10%;
-    margin-top: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
     width: 60px;
+    height: 60px;
     background-color: white;
     float: left;
     display: block;
