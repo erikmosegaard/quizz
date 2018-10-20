@@ -38,10 +38,10 @@
                         <img id="imgbox" :src="image">
                     </div>
                     <div class="frage">
-                        <li>{{ fragen[target].frage }}</li>
+                        <li>{{ fragen[lang][target].frage }}</li>
                     </div>
                     <div class="antworten">
-                        <li v-for="n in fragen[target].antworten">
+                        <li v-for="n in fragen[lang][target].antworten">
                             <div v-if="n.next" v-on:click="target = n.next; ">
                                 {{ n.antwort }}
                             </div>
@@ -62,14 +62,35 @@
         </div>
     </div>
     <script>
+        function getStartLanguage() {
+            var defaultLang = 'DE'
+            var supportedLanguages = Object.keys(fragenKatalog)
+
+            // Try to get the language from the browser settings
+            if (navigator.language && navigator.language.length >= 2) {
+                var browserLang = navigator.language
+
+                // Extract the first part
+                browserLang = browserLang.substring(0, 2).toLocaleUpperCase()
+
+                // Check, if we support the language
+                if (supportedLanguages.indexOf(browserLang) !== -1) {
+                    return browserLang
+                }
+            }
+
+            // return default language by default
+            return defaultLang
+        }
+
         var app = new Vue({
             el: "#app",
             data: {
                 image: "",
-                fragen: fragenKatalog["EN"],
+                fragen: fragenKatalog,
                 target: "start",
-                languages: ["EN", "DE"],
-                lang: 'EN',
+                languages: Object.keys(fragenKatalog),
+                lang: getStartLanguage(),
             },
             methods: {
                 reset: function () {
@@ -80,7 +101,6 @@
                     let index = this.languages.indexOf(this.lang)
                     index = (index + 1) % this.languages.length
                     this.lang = this.languages[index]
-                    this.fragen = fragenKatalog[this.lang];
                 }
             }
         })
