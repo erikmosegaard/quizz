@@ -56,7 +56,7 @@ const fragenKatalog = {
     f2c: {
       frage: "Warum gibt es Konflikte?",
       antworten: [{
-          antwort: "Warum nicht?",
+          antwort: "Weil sie Spass machen und weil sie ökonomisch sinnvoll sind",
           next: "f3ca"
         },
         {
@@ -64,151 +64,151 @@ const fragenKatalog = {
           next: "f3cb"
         },
         {
-          antwort: "???",
+          antwort: "Weil wir Tiere sind",
           next: "f3cc"
         }
       ]
     },
     f3aa: {
-      frage: "Wie ist die ideale Gesellschaft?",
+      frage: "Wer sollte am meisten bestraft werden?",
       antworten: [{
-          antwort: "a",
+          antwort: "Insekten oder Steine",
           img: "Bild_1.jpg"
         },
         {
-          antwort: "b",
+          antwort: "Menschen die von Geld leben, das sie nicht verdienen",
           img: "Bild_2.jpg"
         },
         {
-          antwort: "c",
+          antwort: "Menschen die mit Geld investieren, das sie nicht verdienten",
           img: "Bild_3.jpg"
         }
       ]
     },
     f3ab: {
-      frage: "?",
+      frage: "Woher kommen deine Privilegien?",
       antworten: [{
-          antwort: "a",
+          antwort: "Aus meiner eigenen Muskelkraft",
           img: "Bild_4.jpg"
         },
         {
-          antwort: "b",
+          antwort: "Von der harten Arbeit meiner Vorfahr_innen",
           img: "Bild_5.jpg"
         },
         {
-          antwort: "c",
+          antwort: "Von der harten Arbeit meiner Nachbarn",
           img: "Bild_6.jpg"
         }
       ]
     },
     f3ac: {
-      frage: "?",
+      frage: "Was wäre, wenn es keine Hierarchien gäbe?",
       antworten: [{
-          antwort: "a",
+          antwort: "Ich wäre zuoberst",
           img: "Bild_7.jpg"
         },
         {
-          antwort: "b",
+          antwort: "Die Gesellschaft würde im Chaos versinken",
           img: "Bild_8.jpg"
         },
         {
-          antwort: "c",
+          antwort: "Wir können nicht ohne Hierachien leben, wir können es nur versuchen",
           img: "Bild_9.jpg"
         }
       ]
     },
     f3ba: {
-      frage: "?",
+      frage: "Was ist am dreckigsten?",
       antworten: [{
-          antwort: "a",
+          antwort: "Krankheit",
           img: "Bild_10.jpg"
         },
         {
-          antwort: "b",
+          antwort: "Ratten",
           img: "Bild_11.jpg"
         },
         {
-          antwort: "c",
+          antwort: "deine Toilette",
           img: "Bild_12.jpg"
         }
       ]
     },
     f3bb: {
-      frage: "?",
+      frage: "Wo hinein würdest du am ehesten gehen?",
       antworten: [{
-          antwort: "a",
+          antwort: "In den Bauch eines anderen Menschen",
           img: "Bild_13.jpg"
         },
         {
-          antwort: "b",
+          antwort: "Auf einem anarchistischen Planeten",
           img: "Bild_14.jpg"
         },
         {
-          antwort: "c",
+          antwort: "In eine öffentliche Fernseh-Diskussion über Privilegien als sehr privilegierte Person unter 10 nicht-privilegierten Personen",
           img: "Bild_15.jpg"
         }
       ]
     },
     f3bc: {
-      frage: "?",
+      frage: "Welche Idee zur Mobilitätspolitik würdest du unterstützen?",
       antworten: [{
-          antwort: "a",
+          antwort: "Mobilität sollte gratis sein und alle Menschen dürften jederzeit überallhin fliegen",
           img: "Bild_16.jpg"
         },
         {
-          antwort: "b",
+          antwort: "Mobilität sollte teurer sein, damit nur wohlhabende Personen fliegen könnten",
           img: "Bild_17.jpg"
         },
         {
-          antwort: "c",
+          antwort: "Mobilität sollte so reguliert sein, dass nur arme Menschen fliegen dürften",
           img: "Bild_18.jpg"
         }
       ]
     },
     f3ca: {
-      frage: "?",
+      frage: "Was macht auch Spass, und ist aber gratis?",
       antworten: [{
-          antwort: "a",
+          antwort: "Über Nationsgrenzen laufen",
           img: "Bild_19.jpg"
         },
         {
-          antwort: "b",
+          antwort: "Luft",
           img: "Bild_20.jpg"
         },
         {
-          antwort: "c",
+          antwort: "Wasser",
           img: "Bild_21.jpg"
         }
       ]
     },
     f3cb: {
-      frage: "?",
+      frage: "Wie viele Personen passen in deine Wohnung?",
       antworten: [{
-          antwort: "a",
+          antwort: "Etwa zwei",
           img: "Bild_22.jpg"
         },
         {
-          antwort: "b",
+          antwort: "Ungefähr 200, bis ganz unter die Decke",
           img: "Bild_23.jpg"
         },
         {
-          antwort: "c",
+          antwort: "Alle Personen, die ich gern habe",
           img: "Bild_24.jpg"
         }
       ]
     },
     f3cc: {
-      frage: "?",
+      frage: "Denkst du, Menschen und Tiere sind gleich viel wert und sollten die gleichen Rechte haben?",
       antworten: [{
-          antwort: "a",
+          antwort: "Ich esse Käse, würde aber nicht von einem Stier geschwängert und gemolken werden wollen",
           img: "Bild_25.jpg"
         },
         {
-          antwort: "b",
+          antwort: "Tiere haben ihre eigenen Intelligenz-Systeme, sind aber nicht gleichwertig im Wertsystem der Menschen",
           img: "Bild_26.jpg"
         },
         {
-          antwort: "c",
+          antwort: "Ich wäre manchmal gern ein Tier",
           img: "Bild_27.jpg"
         }
       ]
