@@ -73,15 +73,15 @@ const fragenKatalog = {
       frage: "Wer sollte am meisten bestraft werden?",
       antworten: [{
           antwort: "Insekten oder Steine",
-          img: "Bild_1.jpg"
+          img: "1.jpg"
         },
         {
           antwort: "Menschen die von Geld leben, das sie nicht verdienen",
-          img: "Bild_2.jpg"
+          img: "2.jpg"
         },
         {
           antwort: "Menschen die mit Geld investieren, das sie nicht verdienten",
-          img: "Bild_3.jpg"
+          img: "3 Kopie.jpg"
         }
       ]
     },
@@ -89,15 +89,15 @@ const fragenKatalog = {
       frage: "Woher kommen deine Privilegien?",
       antworten: [{
           antwort: "Aus meiner eigenen Muskelkraft",
-          img: "Bild_4.jpg"
+          img: "4.jpg"
         },
         {
           antwort: "Von der harten Arbeit meiner Vorfahr_innen",
-          img: "Bild_5.jpg"
+          img: "5.jpg"
         },
         {
           antwort: "Von der harten Arbeit meiner Nachbarn",
-          img: "Bild_6.jpg"
+          img: "6.jpg"
         }
       ]
     },
@@ -105,15 +105,15 @@ const fragenKatalog = {
       frage: "Was wäre, wenn es keine Hierarchien gäbe?",
       antworten: [{
           antwort: "Ich wäre zuoberst",
-          img: "Bild_7.jpg"
+          img: "7.jpg"
         },
         {
           antwort: "Die Gesellschaft würde im Chaos versinken",
-          img: "Bild_8.jpg"
+          img: "8.jpg"
         },
         {
           antwort: "Wir können nicht ohne Hierachien leben, wir können es nur versuchen",
-          img: "Bild_9.jpg"
+          img: "9.jpg"
         }
       ]
     },
@@ -121,15 +121,15 @@ const fragenKatalog = {
       frage: "Was ist am dreckigsten?",
       antworten: [{
           antwort: "Krankheit",
-          img: "Bild_10.jpg"
+          img: "10.jpg"
         },
         {
           antwort: "Ratten",
-          img: "Bild_11.jpg"
+          img: "1.jpg"
         },
         {
           antwort: "deine Toilette",
-          img: "Bild_12.jpg"
+          img: "2.jpg"
         }
       ]
     },
@@ -137,15 +137,15 @@ const fragenKatalog = {
       frage: "Wo hinein würdest du am ehesten gehen?",
       antworten: [{
           antwort: "In den Bauch eines anderen Menschen",
-          img: "Bild_13.jpg"
+          img: "3 Kopie.jpg"
         },
         {
           antwort: "Auf einem anarchistischen Planeten",
-          img: "Bild_14.jpg"
+          img: "4.jpg"
         },
         {
           antwort: "In eine öffentliche Fernseh-Diskussion über Privilegien als sehr privilegierte Person unter 10 nicht-privilegierten Personen",
-          img: "Bild_15.jpg"
+          img: "5.jpg"
         }
       ]
     },
@@ -153,15 +153,15 @@ const fragenKatalog = {
       frage: "Welche Idee zur Mobilitätspolitik würdest du unterstützen?",
       antworten: [{
           antwort: "Mobilität sollte gratis sein und alle Menschen dürften jederzeit überallhin fliegen",
-          img: "Bild_16.jpg"
+          img: "6.jpg"
         },
         {
           antwort: "Mobilität sollte teurer sein, damit nur wohlhabende Personen fliegen könnten",
-          img: "Bild_17.jpg"
+          img: "7.jpg"
         },
         {
           antwort: "Mobilität sollte so reguliert sein, dass nur arme Menschen fliegen dürften",
-          img: "Bild_18.jpg"
+          img: "8.jpg"
         }
       ]
     },
@@ -169,15 +169,15 @@ const fragenKatalog = {
       frage: "Was macht auch Spass, und ist aber gratis?",
       antworten: [{
           antwort: "Über Nationsgrenzen laufen",
-          img: "Bild_19.jpg"
+          img: "9.jpg"
         },
         {
           antwort: "Luft",
-          img: "Bild_20.jpg"
+          img: "10.jpg"
         },
         {
           antwort: "Wasser",
-          img: "Bild_21.jpg"
+          img: "1.jpg"
         }
       ]
     },
@@ -185,15 +185,15 @@ const fragenKatalog = {
       frage: "Wie viele Personen passen in deine Wohnung?",
       antworten: [{
           antwort: "Etwa zwei",
-          img: "Bild_22.jpg"
+          img: "2.jpg"
         },
         {
           antwort: "Ungefähr 200, bis ganz unter die Decke",
-          img: "Bild_23.jpg"
+          img: "3.jpg"
         },
         {
           antwort: "Alle Personen, die ich gern habe",
-          img: "Bild_24.jpg"
+          img: "4.jpg"
         }
       ]
     },
@@ -201,15 +201,15 @@ const fragenKatalog = {
       frage: "Denkst du, Menschen und Tiere sind gleich viel wert und sollten die gleichen Rechte haben?",
       antworten: [{
           antwort: "Ich esse Käse, würde aber nicht von einem Stier geschwängert und gemolken werden wollen",
-          img: "Bild_25.jpg"
+          img: "5.jpg"
         },
         {
           antwort: "Tiere haben ihre eigenen Intelligenz-Systeme, sind aber nicht gleichwertig im Wertsystem der Menschen",
-          img: "Bild_26.jpg"
+          img: "6.jpg"
         },
         {
           antwort: "Ich wäre manchmal gern ein Tier",
-          img: "Bild_27.jpg"
+          img: "7.jpg"
         }
       ]
     },
