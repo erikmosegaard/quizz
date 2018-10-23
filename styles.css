@@ -1,7 +1,7 @@
 body{
     padding: 0;
     margin: 0;
-    background-image: url("images/grauTest.jpg");
+    background-image: url("images/52_wide.jpg");
     background-attachment: fixed;
     max-width: 1920px;
     width:100%;
@@ -22,7 +22,7 @@ body{
 #bottom_element p{
     margin:10px;
     font-size: 15pt;
-    font-family: "century gothic";
+    font-family: "Permanent Marker", serif;
     letter-spacing: 2px;
     font-weight: 100;
     text-align: right;
@@ -42,7 +42,7 @@ body{
     margin:0px;
     padding: 10px;
     font-size: 45pt;
-    font-family: "century gothic";
+    font-family: "Permanent Marker", serif;
     letter-spacing: 2px;
     font-weight: 100;
     color: rgb(255, 255, 255);
@@ -57,7 +57,7 @@ body{
     margin:0px;
     padding: 10px;
     font-size: 25pt;
-    font-family: "century gothic";
+    font-family: "Permanent Marker", serif;
     letter-spacing: 2px;
     font-weight: 100;
     text-align: left;
@@ -80,7 +80,7 @@ body{
     background-repeat: round;
     background-position: right -5px bottom -2px;
     font-size: 25pt;
-    font-family: "century gothic";
+    font-family: "Permanent Marker", serif;
     letter-spacing: 2px;
     font-weight: 100;
     background-color: rgba(255,255,255,0.8);
@@ -166,7 +166,7 @@ video {
     text-decoration: none;
     font-size: 25pt;
     list-style-type: none;
-    font-family: "century gothic";
+    font-family: "Permanent Marker", serif;
     letter-spacing: 2px;
     padding: 10px;
 }
@@ -188,7 +188,7 @@ video {
 
     font-size: 15pt;
     list-style-type: none;
-    font-family: "century gothic";
+    font-family: "Permanent Marker", serif;
     letter-spacing: 2px;
     border:1px solid rgb(145, 135, 135, 0.6);
 }
