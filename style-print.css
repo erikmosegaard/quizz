@@ -1,24 +1,20 @@
+/* Maximize image */
 #imgbox{
     height: 100% !important;
     width: 100% !important;
     max-height: 100% !important;
     max-width: 100% !important;
     position: fixed;
-    margin: 0 auto;
-    pointer-events: none;
-    padding-top: 0;
+    padding: 0;
+    margin: 0;
 }
 
-body {
-    max-width: 100% !important;
-    max-height: 100% !important;
+/* Hide everything possible */
+.frage, .antworten, #buffer_top, #homeTag, #printTag {
+    display: none;
 }
-#centerwrap {
+
+/* Minimize the rest */
+body, #centerwrap, #antwortenwrap, #vueGenerate, #imagecontainer {
     height: 0 !important;
-}
-#homeTag {
-    display: none;
-}
-#printTag {
-    display: none;
 }
