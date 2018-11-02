@@ -73,15 +73,15 @@ const fragenKatalog = {
       frage: "Wer sollte am meisten bestraft werden?",
       antworten: [{
           antwort: "Insekten oder Steine",
-          img: "z1.jpg"
+          img: "1z.jpg"
         },
         {
           antwort: "Menschen die von Geld leben, das sie nicht verdienen",
-          img: "z2.jpg"
+          img: "2z.jpg"
         },
         {
           antwort: "Menschen die mit Geld investieren, das sie nicht verdienten",
-          img: "z3.jpg"
+          img: "3z.jpg"
         }
       ]
     },
@@ -89,15 +89,15 @@ const fragenKatalog = {
       frage: "Woher kommen deine Privilegien?",
       antworten: [{
           antwort: "Aus meiner eigenen Muskelkraft",
-          img: "z4.jpg"
+          img: "4z.jpg"
         },
         {
           antwort: "Von der harten Arbeit meiner Vorfahr_innen",
-          img: "z5.jpg"
+          img: "5z.jpg"
         },
         {
           antwort: "Von der harten Arbeit meiner Nachbarn",
-          img: "z6.jpg"
+          img: "6z.jpg"
         }
       ]
     },
@@ -105,15 +105,15 @@ const fragenKatalog = {
       frage: "Was wäre, wenn es keine Hierarchien gäbe?",
       antworten: [{
           antwort: "Ich wäre zuoberst",
-          img: "z7.jpg"
+          img: "7z.jpg"
         },
         {
           antwort: "Die Gesellschaft würde im Chaos versinken",
-          img: "z8.jpg"
+          img: "8z.jpg"
         },
         {
           antwort: "Wir können nicht ohne Hierachien leben, wir können es nur versuchen",
-          img: "z9.jpg"
+          img: "9z.jpg"
         }
       ]
     },
@@ -121,15 +121,15 @@ const fragenKatalog = {
       frage: "Was ist am dreckigsten?",
       antworten: [{
           antwort: "Krankheit",
-          img: "z10.jpg"
+          img: "10z.jpg"
         },
         {
           antwort: "Ratten",
-          img: "z11.jpg"
+          img: "11z.jpg"
         },
         {
           antwort: "deine Toilette",
-          img: "z12.jpg"
+          img: "12z.jpg"
         }
       ]
     },
@@ -137,15 +137,15 @@ const fragenKatalog = {
       frage: "Wo hinein würdest du am ehesten gehen?",
       antworten: [{
           antwort: "In den Bauch eines anderen Menschen",
-          img: "z13.jpg"
+          img: "13z.jpg"
         },
         {
           antwort: "Auf einem anarchistischen Planeten",
-          img: "z14.jpg"
+          img: "14z.jpg"
         },
         {
           antwort: "In eine öffentliche Fernseh-Diskussion über Privilegien als sehr privilegierte Person unter 10 nicht-privilegierten Personen",
-          img: "z15.jpg"
+          img: "15z.jpg"
         }
       ]
     },
@@ -153,15 +153,15 @@ const fragenKatalog = {
       frage: "Welche Idee zur Mobilitätspolitik würdest du unterstützen?",
       antworten: [{
           antwort: "Mobilität sollte gratis sein und alle Menschen dürften jederzeit überallhin fliegen",
-          img: "z16.jpg"
+          img: "16z.jpg"
         },
         {
           antwort: "Mobilität sollte teurer sein, damit nur wohlhabende Personen fliegen könnten",
-          img: "z17.jpg"
+          img: "17z.jpg"
         },
         {
           antwort: "Mobilität sollte so reguliert sein, dass nur arme Menschen fliegen dürften",
-          img: "z18.jpg"
+          img: "18z.jpg"
         }
       ]
     },
@@ -169,15 +169,15 @@ const fragenKatalog = {
       frage: "Was macht auch Spass, und ist aber gratis?",
       antworten: [{
           antwort: "Über Nationsgrenzen laufen",
-          img: "z19.jpg"
+          img: "19z.jpg"
         },
         {
           antwort: "Luft",
-          img: "z20.jpg"
+          img: "20z.jpg"
         },
         {
           antwort: "Wasser",
-          img: "z21.jpg"
+          img: "21z.jpg"
         }
       ]
     },
@@ -185,15 +185,15 @@ const fragenKatalog = {
       frage: "Wie viele Personen passen in deine Wohnung?",
       antworten: [{
           antwort: "Etwa zwei",
-          img: "z22.jpg"
+          img: "22z.jpg"
         },
         {
           antwort: "Ungefähr 200, bis ganz unter die Decke",
-          img: "z23.jpg"
+          img: "23z.jpg"
         },
         {
           antwort: "Alle Personen, die ich gern habe",
-          img: "z24.jpg"
+          img: "24z.jpg"
         }
       ]
     },
@@ -201,15 +201,15 @@ const fragenKatalog = {
       frage: "Denkst du, Menschen und Tiere sind gleich viel wert und sollten die gleichen Rechte haben?",
       antworten: [{
           antwort: "Ich esse Käse, würde aber nicht von einem Stier geschwängert und gemolken werden wollen",
-          img: "z25.jpg"
+          img: "25z.jpg"
         },
         {
           antwort: "Tiere haben ihre eigenen Intelligenz-Systeme, sind aber nicht gleichwertig im Wertsystem der Menschen",
-          img: "z26.jpg"
+          img: "26z.jpg"
         },
         {
           antwort: "Ich wäre manchmal gern ein Tier",
-          img: "z27.jpg"
+          img: "27z.jpg"
         }
       ]
     },
@@ -283,15 +283,15 @@ const fragenKatalog = {
       frage: "Who should be punished most?",
       antworten: [{
           antwort: "Minarets or maybe insects or maybe stones",
-          img: "z1.jpg"
+          img: "1z.jpg"
         },
         {
           antwort: "People who live from money they don’t deserve",
-          img: "z2.jpg"
+          img: "2z.jpg"
         },
         {
           antwort: "People who invest with money they don’t deserve",
-          img: "z3.jpg"
+          img: "3z.jpg"
         }
       ]
     },
@@ -299,15 +299,15 @@ const fragenKatalog = {
       frage: "Where do your privileges come from?",
       antworten: [{
           antwort: "From my strong muscles",
-          img: "z4.jpg"
+          img: "4z.jpg"
         },
         {
           antwort: "From my ancestors hard work",
-          img: "z5.jpg"
+          img: "5z.jpg"
         },
         {
           antwort: "From my neighbours hard work",
-          img: "z6.jpg"
+          img: "6z.jpg"
         }
       ]
     },
@@ -315,15 +315,15 @@ const fragenKatalog = {
       frage: "What if there was no hierarchy?",
       antworten: [{
           antwort: "In this case, I would be on the top",
-          img: "z7.jpg"
+          img: "7z.jpg"
         },
         {
           antwort: "Society would become a mess",
-          img: "z8.jpg"
+          img: "8z.jpg"
         },
         {
           antwort: "We can not have no hierarchy, we can only try ",
-          img: "z9.jpg"
+          img: "9z.jpg"
         }
       ]
     },
@@ -331,15 +331,15 @@ const fragenKatalog = {
       frage: "What is most filthy?",
       antworten: [{
           antwort: "sickness",
-          img: "z10.jpg"
+          img: "10z.jpg"
         },
         {
           antwort: "rats",
-          img: "z11.jpg"
+          img: "11z.jpg"
         },
         {
           antwort: "your toilet",
-          img: "z12.jpg"
+          img: "12z.jpg"
         }
       ]
     },
@@ -347,15 +347,15 @@ const fragenKatalog = {
       frage: "Inside which of these would you rather go?",
       antworten: [{
           antwort: "into another person’s belly",
-          img: "z13.jpg"
+          img: "13z.jpg"
         },
         {
           antwort: "on an anarchist planet",
-          img: "z14.jpg"
+          img: "14z.jpg"
         },
         {
           antwort: "into a public tv discussion about privileges as a very privileged person amongst 10 underprivileged persons",
-          img: "z15.jpg"
+          img: "15z.jpg"
         }
       ]
     },
@@ -363,15 +363,15 @@ const fragenKatalog = {
       frage: "Which innovation in mobility politics do you support?",
       antworten: [{
           antwort: "Mobility should be for free and everyone can fly wherever they want all the time",
-          img: "z16.jpg"
+          img: "16z.jpg"
         },
         {
           antwort: "Mobility should be more expensive, so only very rich people can afford to fly",
-          img: "z17.jpg"
+          img: "17z.jpg"
         },
         {
           antwort: "Mobility should be regulated, so only poor people are allowed to fly",
-          img: "z18.jpg"
+          img: "18z.jpg"
         }
       ]
     },
@@ -379,15 +379,15 @@ const fragenKatalog = {
       frage: "What is fun and free, too?",
       antworten: [{
           antwort: "Walking over national borders",
-          img: "z19.jpg"
+          img: "19z.jpg"
         },
         {
           antwort: "Air",
-          img: "z20.jpg"
+          img: "20z.jpg"
         },
         {
           antwort: "No water any more",
-          img: "z21.jpg"
+          img: "21z.jpg"
         }
       ]
     },
@@ -395,15 +395,15 @@ const fragenKatalog = {
       frage: "How many people can be put into your flat?",
       antworten: [{
           antwort: "About two",
-          img: "z22.jpg"
+          img: "22z.jpg"
         },
         {
           antwort: "Around 200, until up until the ceiling",
-          img: "z23.jpg"
+          img: "23z.jpg"
         },
         {
           antwort: "All the people I like",
-          img: "z24.jpg"
+          img: "24z.jpg"
         }
       ]
     },
@@ -411,15 +411,15 @@ const fragenKatalog = {
       frage: "Thus, do you think animals and human are / should be equal?",
       antworten: [{
           antwort: "I eat cheese but would not want to be made pregnant by a cow and have my baby killed and be milked",
-          img: "z25.jpg"
+          img: "25z.jpg"
         },
         {
           antwort: "Animals have their own systems of intelligence but are not equal in human’ value system",
-          img: "z26.jpg"
+          img: "26z.jpg"
         },
         {
           antwort: "I would love to be an animal, sometimes",
-          img: "z27.jpg"
+          img: "27z.jpg"
         }
       ]
     },
