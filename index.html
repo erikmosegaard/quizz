@@ -20,23 +20,27 @@
             <a v-on:click="switchLang()">{{ lang }}</a>
         </div>
 
-        <transition name="logo" v-if="target === 'start'">
-            <div class="circle_center" @click="target = 'video'"></div>
+        <transition name="logo">
+            <div v-if="target === 'start'" @click="go('video')" class="start">
+                <div class="circle_center" v-if="target === 'start'"></div>
+            </div>
         </transition>
 
-        <div v-else-if="target === 'video'">
-            <video autoplay @ended="target = 'f1'" @click="target = 'f1'" @pause="target = 'f1'">
-                    <source src="images/intro.webm" type="video/webm" />
-                    <source src="images/intro.mp4" type="video/mp4" />
-            </video>
-        </div>
-
-        <div id="centerwrap" v-else>
+        <transition name="video">
+            <div class="backdrop" @click="go('f1')" v-if="target === 'video'">
+                <video autoplay @ended="target = 'f1'" @pause="target = 'f1'">
+                        <source src="images/intro.webm" type="video/webm" />
+                        <source src="images/intro.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </transition>
+        <transition name="question">
+        <div id="centerwrap" v-if="target !== 'start' && target !== 'video'">
             <div id="antwortenwrap">
                 <div id="vueGenerate">
                     <div id="imagecontainer" v-if="image">
-                        <a @click="reset" id="homeTag"><img id="home" src="images/homefin.png" alt="home"> </a>
-                        <a onclick="javascript:window.print()" id="printTag"><img id="print" src="images/printfin.png"
+                        <a @click="reset" @touchstart="reset" id="homeTag"><img id="home" src="images/homefin.png" alt="home"> </a>
+                        <a onclick="javascript:window.print()" ontouchstart="javascript:window.print()" id="printTag"><img id="print" src="images/printfin.png"
                                 alt="home"> </a>
                         <img id="imgbox" :src="image">
                     </div>
@@ -45,10 +49,10 @@
                     </div>
                     <div class="antworten">
                         <li v-for="n in fragen[lang][target].antworten">
-                            <div v-if="n.next" v-on:click="target = n.next; ">
+                            <div v-if="n.next" @click="go(n.next)">
                                 {{ n.antwort }}
                             </div>
-                            <div v-else="" v-on:click="image = 'images/'+n.img; ">
+                            <div v-else="" @click="image = 'images/'+n.img; "  @touchstart="image = 'images/'+n.img; ">
                                 {{ n.antwort }}
                             </div>
                         </li>
@@ -57,6 +61,7 @@
                 </div>
             </div>
         </div>
+        </transition>
     </div>
     <script>
         // Prevent scrolling and bounce on iPad
@@ -94,11 +99,16 @@
                 target: "start",
                 languages: Object.keys(fragenKatalog),
                 lang: getStartLanguage(),
+                showQuestions: false,
             },
             methods: {
+                go: function(where) {
+                    this.target = where;
+                },
                 reset: function () {
                     this.target = "start";
                     this.image = "";
+                    this.showQuestions = false;
                 },
                 switchLang() {
                     let index = this.languages.indexOf(this.lang)

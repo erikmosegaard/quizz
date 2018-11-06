@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Gang-of-Three';
+    src:url('fonts/go3v2.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KG-Happy';
+    src:url('fonts/KGHAPPYSolid.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
     padding: 0;
     margin: 0;
@@ -23,7 +37,7 @@ body{
 #bottom_element p{
     margin:10px;
     font-size: 15pt;
-    font-family: "Permanent Marker", serif;
+    font-family: "Gang-of-Three", serif;
     letter-spacing: 2px;
     font-weight: 100;
     text-align: right;
@@ -42,26 +56,22 @@ body{
     margin:0px;
     padding: 10px;
     font-size: 45pt;
-    font-family: "Permanent Marker", serif;
+    font-family: "Gang-of-Three", serif;
     letter-spacing: 2px;
     font-weight: 100;
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
 
-#buffer_top a:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
 #text_top {
     margin:0px;
     padding: 5px 10px;
-    font-size: 25pt;
-    font-family: "Permanent Marker", serif;
+    font-size: 30pt;
+    font-family: "Gang-of-Three", serif;
     letter-spacing: 2px;
     font-weight: 100;
     text-align: left;
-    color: rgb(255, 255, 255);
+    color: rgb(131, 45, 56);
     position: fixed;
     margin-right: 100px;
 }
@@ -71,6 +81,13 @@ body{
     margin-top:-2px;
     height: 2000px;
 }
+.start {
+    position: fixed;
+    top: 110px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 
 .circle_center{
     position: fixed;
@@ -79,7 +96,7 @@ body{
     height: 450px;
     background-image: url("images/logo.png");
     background-repeat: round;
-    background-position: right -5px bottom -2px;
+    background-position: right -65px bottom 90px;
     font-size: 25pt;
     font-family: "Permanent Marker", serif;
     letter-spacing: 2px;
@@ -95,7 +112,7 @@ body{
     z-index: 5;
     position:absolute; /*it can be fixed too*/
     left:0; right:0;
-    top:0; bottom:0;
+    top:0; bottom:100px;
     margin:auto;
 
     /*this to solve "the content will not be cut when the window is smaller than the content": */
@@ -103,24 +120,60 @@ body{
     max-height:100%;
     overflow:auto;
 }
-
-.logo-leave-active {
-    transition: all 2s ease;
-
-}
-
-.logo-leave-to {
-    transform: rotate(180deg) scale(0.1);
-    opacity: 0;
+div.backdrop {
+    position: absolute; /*it can be fixed too*/
+    left:0;
+    right:0;
+    top: 0px;
+    bottom: 0;
+    background-color: rgb(0, 0, 0)
 }
 
 video {
     z-index: 4;
-    width: 90%;
-    position:absolute; /*it can be fixed too*/
-    left:0; right:0;
-    top:0; bottom:0;
-    margin:auto;
+    width: 100%;
+    position: absolute; /*it can be fixed too*/
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.logo-leave-active, .logo-leave-active .circle_center {
+    transition: all 0.5s ease;
+}
+.logo-leave-to .circle_center {
+    transform: scale(0.1);
+    opacity: 0;
+}
+.video-enter-active.backdrop {
+    transition: background-color 0.4s linear;
+}
+.video-enter-active video {
+    transition: all .4s ease;
+
+}
+.video-leave-active.backdrop  {
+    transition: background-color 0.3s linear;
+}
+.video-leave-active video {
+    transition: opacity 0.15s linear;
+
+}
+.video-leave-to video {
+    opacity: 0;
+}
+.video-leave-to.backdrop {
+    background-color: rgb(0, 0, 0, 0.0);
+}
+
+.video-enter.backdrop {
+    background-color: rgb(0, 0, 0, 0.0);
+}
+.video-enter video {
+    opacity: 0;
 }
 
 #vueGenerate{
@@ -166,10 +219,11 @@ video {
 
 .frage li{
     text-decoration: none;
-    font-size: 25pt;
+    font-size: 22pt;
     list-style-type: none;
-    font-family: "Permanent Marker", serif;
-    letter-spacing: 2px;
+    font-family: "KG-Happy", serif;
+    letter-spacing: 0px;
+    line-height:  140%;
     padding: 10px;
 }
 
@@ -180,26 +234,18 @@ video {
     margin-top: 50px;
 }
 
-.antworten li:hover{
-    background-color:rgba(143, 143, 143, 0.8);
-}
-
 .antworten li{
     background-color:#333;
     text-decoration: none;
 
-    font-size: 15pt;
+    font-size: 20pt;
     list-style-type: none;
-    font-family: "Permanent Marker", serif;
+    font-family: "Gang-of-Three", serif;
     letter-spacing: 2px;
     border:1px solid rgb(145, 135, 135, 0.6);
 }
 
-.antworten li > div {
-    padding: 30px;
-    cursor: pointer;
-}
-.antworten li > div:hover {
+.antworten li > div, .antworten li > div:hover {
     padding: 30px;
     cursor: pointer;
 }
@@ -208,7 +254,7 @@ video {
     width: 100%;
     height: 100%;
     background-color:rgb(145, 135, 135, 0.6);
-    padding-top:5%;
+    padding-top:10%;
 }
 
 .antworten button{
@@ -319,10 +365,6 @@ video {
 @media only screen and (max-width: 768px) {
     body{
         height: auto;
-    }
-
-    #vueGenerate li{
-        font-size: smaller;
     }
 
     #centerwrap{
